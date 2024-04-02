@@ -3,17 +3,40 @@
 }
 
 body {
-    margin: 0;
     font-family: outfitFont;
+    margin: 0;
 }
 
-header img {
+img:first-of-type {
     display: block;
-    width: 100vw;
+    margin: 0;
+    width: 100%;
 }
 
-.intro {
-    margin: 2.5em 2em 2em 2em;
+ul {
+    padding-left: 1.3rem;
+
+    li {
+        padding-left: 1rem;
+        margin-bottom: 0.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::marker {
+            font-size: 0.7em;
+        }
+    }
+}
+
+.wrapper {
+    margin: 2.5em 2em 0 2em;
+}
+
+.title {
+
+    margin-bottom: 2rem;
 
     h1 {
         color: #302d2c;
@@ -26,19 +49,35 @@ header img {
     p {
         color: #5f574e;
         line-height: 1.5em;
+        margin: 0;
 
     }
 }
 
-.card {
+.preparation {
 
     background-color: #fff7fb;
+    border-radius: 12px;
+    padding: 1.5rem;
+
+    h2,
+    ul {
+        margin: 0;
+    }
 
     h2 {
         color: #7b284f;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
     }
 
-    ul {}
+    li {
+        color: #5f574e;
+
+        &::marker {
+            color: #7b284f;
+        }
+    }
 }
 
 .attribution {
