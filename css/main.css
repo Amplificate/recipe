@@ -10,15 +10,12 @@ header img {
     width: 100vw;
 }
 
-.intro h1 {
-    color: hsl(24, 5%, 18%);
-    font-family: youngSerifFont;
-}
-
 .intro {
     margin: 2.5em 2em 0 2em;
 
     h1 {
+        color: hsl(24, 5%, 18%);
+        font-family: youngSerifFont;
         font-size: 2.3em;
         font-weight: normal;
         line-height: 1em;
@@ -26,6 +23,10 @@ header img {
 
     p {
         color: hsl(30, 10%, 34%);
+        font-weight: normal;
+        line-height: 1.5em;
+        font-family: outfitFont;
+
     }
 }
 
