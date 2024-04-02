@@ -1,3 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header img {
+    width: 100vw;
+}
+
+.intro h1 {
+    color: hsl(24, 5%, 18%);
+    font-family: youngSerifFont;
+}
+
+.intro {
+    margin: 2.5em 2em 0 2em;
+
+    h1 {
+        font-size: 2.3em;
+        font-weight: normal;
+        line-height: 1em;
+    }
+
+    p {
+        color: hsl(30, 10%, 34%);
+    }
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -5,4 +36,14 @@
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@font-face {
+    font-family: outfitFont;
+    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: youngSerifFont;
+    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
 }
