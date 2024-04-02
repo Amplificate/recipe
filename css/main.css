@@ -4,30 +4,41 @@
 
 body {
     margin: 0;
+    font-family: outfitFont;
 }
 
 header img {
+    display: block;
     width: 100vw;
 }
 
 .intro {
-    margin: 2.5em 2em 0 2em;
+    margin: 2.5em 2em 2em 2em;
 
     h1 {
-        color: hsl(24, 5%, 18%);
+        color: #302d2c;
         font-family: youngSerifFont;
-        font-size: 2.3em;
+        font-size: 2.2em;
         font-weight: normal;
         line-height: 1em;
     }
 
     p {
-        color: hsl(30, 10%, 34%);
-        font-weight: normal;
+        color: #5f574e;
         line-height: 1.5em;
-        font-family: outfitFont;
 
     }
+}
+
+.card {
+
+    background-color: #fff7fb;
+
+    h2 {
+        color: #7b284f;
+    }
+
+    ul {}
 }
 
 .attribution {
