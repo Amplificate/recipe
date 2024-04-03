@@ -2,10 +2,35 @@
     box-sizing: border-box;
 }
 
+:root {
+    --brandy-red: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --white-coffee: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
 body {
     font-family: outfitFont;
     margin: 0;
+    color: var(--wenge-brown);
 }
+
+header {
+    margin-bottom: 2rem;
+}
+
+hr {
+    border: none;
+    background-color: var(--white-coffee);
+    height: 1px;
+    margin: 2rem 0;
+
+}
+
 
 img:first-of-type {
     display: block;
@@ -13,11 +38,13 @@ img:first-of-type {
     width: 100%;
 }
 
-ul {
+ul,
+ol {
+    margin: 0;
     padding-left: 1.3rem;
 
     li {
-        padding-left: 1rem;
+        padding-left: 1.2rem;
         margin-bottom: 0.5rem;
 
         &:last-child {
@@ -26,6 +53,38 @@ ul {
 
         &::marker {
             font-size: 0.7em;
+        }
+    }
+}
+
+ol li::marker {
+    font: bold 1rem outfitFont;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr:first-child td {
+        padding-top: 0;
+    }
+
+    tr:last-child td {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    td {
+        border-bottom: 1px solid var(--white-coffee);
+
+        &:nth-child(1) {
+            padding: 0.75rem 1rem 0.75rem 2rem;
+        }
+
+        &:nth-child(2) {
+            padding: 0.75rem 2rem 0.75rem 0;
+            color: var(--brandy-red);
+            font-weight: bold;
         }
     }
 }
@@ -39,16 +98,13 @@ ul {
     margin-bottom: 2rem;
 
     h1 {
-        color: #302d2c;
-        font-family: youngSerifFont;
-        font-size: 2.2em;
-        font-weight: normal;
+        color: var(--dark-charcoal);
+        font: normal 2.25rem youngSerifFont;
         line-height: 1em;
     }
 
     p {
-        color: #5f574e;
-        line-height: 1.5em;
+        line-height: 1.5rem;
         margin: 0;
 
     }
@@ -57,36 +113,48 @@ ul {
 .preparation {
 
     background-color: #fff7fb;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     padding: 1.5rem;
 
-    h2,
-    ul {
-        margin: 0;
-    }
-
     h2 {
-        color: #7b284f;
+        margin: 0;
+        color: var(--dark-raspberry);
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }
 
-    li {
-        color: #5f574e;
-
-        &::marker {
-            color: #7b284f;
-        }
+    li::marker {
+        color: var(--dark-raspberry);
     }
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
+main {
+
+    h2 {
+        margin: 0 0 1.5rem 0;
+        font: normal 1.75rem youngSerifFont;
+        color: var(--brandy-red);
+    }
+
+    p {
+        margin: 1.5rem 0;
+    }
+
+    li::marker {
+        color: var(--brandy-red);
+    }
+
+
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+.attribution {
+    margin: 3em auto auto auto;
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
 }
 
 @font-face {
